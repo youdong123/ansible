@@ -22,12 +22,12 @@ pipeline {
       }
       stage('build project') {
          steps {
-            sh 'mvn  -version '
+            sh 'mvn clean package'
          }
       }
       stage('publish project') {
          steps {
-         sh "echo "It is a test""
+         sh 'mvn  -version'
          }
       }
    }
