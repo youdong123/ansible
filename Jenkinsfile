@@ -22,7 +22,7 @@ pipeline {
       }
       stage('build project') {
          steps {
-            sh 'mvn clean package'
+            sh 'mvn  -version '
          }
       }
       stage('publish project') {
