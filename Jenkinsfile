@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('pull code') {
          steps {
-            checkout([$class: 'GitSCM', branches: [[name: '*/${branch}']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'b8ed4de7-56e7-48e3-a001-7fd5edec5a17', url: 'git@github.com:youdong123/ansible.git']]])
+            checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'b8ed4de7-56e7-48e3-a001-7fd5edec5a17', url: 'git@github.com:youdong123/ansible.git']]])
          }
       }
       stage('code checking') {
