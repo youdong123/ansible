@@ -27,7 +27,7 @@
                 <configuration>
                     <webResources>
                         <resource>
-                            <directory>web_demo_Pipeline</directory>
+                            <directory>src</directory>
                         </resource>
                     </webResources>
                 </configuration>
